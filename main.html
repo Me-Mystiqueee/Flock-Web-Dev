@@ -1,0 +1,79 @@
+<HTML>
+<HEAD>
+<H3> NAME: MEENAL GARG</H3>
+<H3> REG NO: 20BCY10171</H3>
+<title> HTML FORM & GAME </title>
+</head>
+<body bgcolor=black text=white link=white alink=white vlink=white leftmargin=20>
+<hr align=center width=80% color=white>
+<center>
+<img src="1.png" width=900 height=300>
+</center>
+<hr align=center width=80% color=white>
+<h1 align=center> HTML FORM </h1>
+<hr align=center width=40% color=white>
+
+<form align=center action="mailto:meenalgarg014@gmail.com">
+<label type="text">First Name: </label>
+<input type="text"><br>
+<label type="text">Last Name:  </label>
+<input type="text"><br>
+<label type="text">Email ID :   </label>
+<input type="text"><br>
+<label type="text">Age: </label>
+<input type="integer"><br>
+<label type="text">Location: </label>
+<input type="text"><br>
+<button type="reset">RESET</button>
+<button type="Submit">SUBMIT</button>
+</form>
+<hr align=center width=80% color=white>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-right {
+  position: absolute;
+  top: 4px;
+  right: 300px;
+}
+.bottom-right {
+  position: absolute;
+  bottom: 400px;
+  right: 250px;
+}
+</style>
+
+<div class="container">
+<center>
+  <img src="qwert.jpg" width=900 height=600>
+</center> 
+ <div class="top-right" color=white><h1>NUMBER GUESSING GAME</h1></div>
+ <div class="bottom-right" color=white>
+<script>
+function guessno(){
+
+const random = Math.floor(Math.random()*10) + 1;
+let number = parseInt(prompt("Guess a number from 1 to 10"));
+while(number !== random){
+    number = parseInt(prompt("Guess a number from 1 to 10"));
+}
+
+if (number == random){
+    alert("You guessed the correct no.")
+}
+}
+</script>
+<center><h1> Guess the number </h1></center>
+
+<button onClick = "guessno()"> Click here </button> 
+</div>
+</div>
+<hr colour=white>
+</body>
+</html>
